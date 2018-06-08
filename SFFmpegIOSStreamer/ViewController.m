@@ -18,9 +18,7 @@
 #include <libavformat/avformat.h>
 #include <libavutil/mathematics.h>
 #include <libavutil/time.h>
-
-// 服务器地址
-const NSString *outputURL = @"rtmp://192.168.1.105:1935/zbcs/room";
+#import "CommHeader.h"
 
 @interface ViewController ()
 
@@ -32,7 +30,7 @@ const NSString *outputURL = @"rtmp://192.168.1.105:1935/zbcs/room";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.output.text = outputURL;
+    self.output.text = RTMPServiceAddress;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +52,7 @@ const NSString *outputURL = @"rtmp://192.168.1.105:1935/zbcs/room";
     NSString *input_nsstr=[[[NSBundle mainBundle]resourcePath] stringByAppendingPathComponent:input_str];
     
     sprintf(input_str_full,"%s",[input_nsstr UTF8String]);
-    sprintf(output_str_full,"%s",[outputURL UTF8String]);
+    sprintf(output_str_full,"%s",[RTMPServiceAddress UTF8String]);
     
     printf("Input Path:%s\n",input_str_full);
     printf("Output Path:%s\n",output_str_full);

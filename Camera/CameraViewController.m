@@ -66,9 +66,6 @@
 
 @end
 
-// 服务器地址
-const NSString *outputURL1 = @"rtmp://192.168.1.105:1935/zbcs/room";
-
 
 @implementation CameraViewController
 

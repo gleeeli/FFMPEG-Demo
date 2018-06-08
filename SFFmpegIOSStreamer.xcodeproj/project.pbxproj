@@ -75,6 +75,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		075E642C20C93CA3007B7806 /* CommHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommHeader.h; sourceTree = "<group>"; };
 		212C9D1E1F3C0C48007F66DE /* aw_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_all.h; sourceTree = "<group>"; };
 		212C9D201F3C0C48007F66DE /* aw_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_alloc.c; sourceTree = "<group>"; };
 		212C9D211F3C0C48007F66DE /* aw_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_alloc.h; sourceTree = "<group>"; };
@@ -879,6 +880,7 @@
 				214CBB5B1F359F3C0002E4E9 /* Main.storyboard */,
 				9B3733F91B423DD000D6C3D1 /* LaunchScreen.xib */,
 				9B3733EA1B423DCF00D6C3D1 /* Supporting Files */,
+				075E642C20C93CA3007B7806 /* CommHeader.h */,
 			);
 			path = SFFmpegIOSStreamer;
 			sourceTree = "<group>";

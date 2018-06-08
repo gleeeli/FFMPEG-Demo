@@ -102,21 +102,21 @@
     
     
     //写入文件frame.yuv
-    FILE* fp_frame=fopen(output_str_full,"wb");
-    
-    uint8_t *u_frame = aw_alloc(uv_size);
-    memcpy(u_frame, uv_frame, uv_size);
-    
-    uint8_t *v_frame = aw_alloc(uv_size);;
-    memcpy(v_frame, uv_frame + uv_size, uv_size);
-    
-    char* buffer_y = y_frame;//(char*)malloc(sizeof(char)*y_size);
-    char* buffer_u = u_frame;//(char*)malloc(sizeof(char)*y_size/4);
-    char* buffer_v = v_frame;//(char*)malloc(sizeof(char)*y_size/4);
-    
-    fwrite(buffer_y,y_size,1,fp_frame);
-    fwrite(buffer_u,y_size/4,1,fp_frame);
-    fwrite(buffer_v,y_size/4,1,fp_frame);
+//    FILE* fp_frame=fopen(output_str_full,"wb");
+//
+//    uint8_t *u_frame = aw_alloc(uv_size);
+//    memcpy(u_frame, uv_frame, uv_size);
+//
+//    uint8_t *v_frame = aw_alloc(uv_size);;
+//    memcpy(v_frame, uv_frame + uv_size, uv_size);
+//
+//    char* buffer_y = y_frame;//(char*)malloc(sizeof(char)*y_size);
+//    char* buffer_u = u_frame;//(char*)malloc(sizeof(char)*y_size/4);
+//    char* buffer_v = v_frame;//(char*)malloc(sizeof(char)*y_size/4);
+//
+//    fwrite(buffer_y,y_size,1,fp_frame);
+//    fwrite(buffer_u,y_size/4,1,fp_frame);
+//    fwrite(buffer_v,y_size/4,1,fp_frame);
     
     //旋转
     return [self rotateNV12Data:nv12Data];
