@@ -8,12 +8,12 @@
 
 #import "VideoCaptureManager.h"
 #import "AWAVCaptureManager.h"
-
+#import "CommHeader.h"
 
 
 //请修改此地址
-static NSString *sRtmpUrl = @"rtmp://192.168.0.101:1935/zbcs/room";
-
+//static NSString *sRtmpUrl = @"rtmp://192.168.0.101:1935/zbcs/room";
+//RTMPServiceAddress
 
 @interface VideoCaptureManager ()<AWAVCaptureDelegate>
 //按钮
@@ -191,7 +191,7 @@ static NSString *sRtmpUrl = @"rtmp://192.168.0.101:1935/zbcs/room";
         [self.startBtn setTitle:@"开始直播" forState:UIControlStateNormal];
         [self.avCapture stopCapture];
     }else{
-        if ([self.avCapture startCaptureWithRtmpUrl:sRtmpUrl]) {
+        if ([self.avCapture startCaptureWithRtmpUrl:RTMPServiceAddress]) {
             [self.startBtn setTitle:@"停止直播" forState:UIControlStateNormal];
         }
     }

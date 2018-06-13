@@ -357,6 +357,7 @@
     __weak typeof(self) weakSelf = self;
     dispatch_async(encodeQueue, ^{
         if (weakSelf.isCapturing) {
+            //封装一帧flv
             aw_flv_video_tag *video_tag = [weakSelf.encoderManager.videoEncoder encodeVideoSampleBufToFlvTag:sampleBuffer];
             [weakSelf sendFlvVideoTag:video_tag toSendQueue:sendQueue];
         }

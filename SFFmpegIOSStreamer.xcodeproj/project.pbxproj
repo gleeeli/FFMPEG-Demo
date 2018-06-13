@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077A800620CF9AF700F3A4E8 /* BaseApiTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 077A800520CF9AF700F3A4E8 /* BaseApiTestViewController.m */; };
 		212C9D401F3C0C48007F66DE /* aw_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 212C9D201F3C0C48007F66DE /* aw_alloc.c */; };
 		212C9D411F3C0C48007F66DE /* aw_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 212C9D221F3C0C48007F66DE /* aw_array.c */; };
 		212C9D421F3C0C48007F66DE /* aw_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 212C9D251F3C0C48007F66DE /* aw_data.c */; };
@@ -76,6 +77,8 @@
 
 /* Begin PBXFileReference section */
 		075E642C20C93CA3007B7806 /* CommHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommHeader.h; sourceTree = "<group>"; };
+		077A800420CF9AF700F3A4E8 /* BaseApiTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseApiTestViewController.h; sourceTree = "<group>"; };
+		077A800520CF9AF700F3A4E8 /* BaseApiTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseApiTestViewController.m; sourceTree = "<group>"; };
 		212C9D1E1F3C0C48007F66DE /* aw_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_all.h; sourceTree = "<group>"; };
 		212C9D201F3C0C48007F66DE /* aw_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_alloc.c; sourceTree = "<group>"; };
 		212C9D211F3C0C48007F66DE /* aw_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_alloc.h; sourceTree = "<group>"; };
@@ -333,6 +336,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		077A800320CF9AC700F3A4E8 /* Study */ = {
+			isa = PBXGroup;
+			children = (
+				077A800420CF9AF700F3A4E8 /* BaseApiTestViewController.h */,
+				077A800520CF9AF700F3A4E8 /* BaseApiTestViewController.m */,
+			);
+			path = Study;
+			sourceTree = "<group>";
+		};
 		212C9D1D1F3C0C48007F66DE /* libaw */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,6 +860,7 @@
 		9B3733DE1B423DCF00D6C3D1 = {
 			isa = PBXGroup;
 			children = (
+				077A800320CF9AC700F3A4E8 /* Study */,
 				21D8E0151F4D1613004CEF1D /* ffmpeglib */,
 				21D8DF901F4D0259004CEF1D /* include */,
 				214CBB531F359CB00002E4E9 /* Camera */,
@@ -1044,6 +1057,7 @@
 				21D8E0441F4D27C2004CEF1D /* CameraCaptureViewController.m in Sources */,
 				212C9D411F3C0C48007F66DE /* aw_array.c in Sources */,
 				212C9D4B1F3C0C48007F66DE /* aw_encode_flv.c in Sources */,
+				077A800620CF9AF700F3A4E8 /* BaseApiTestViewController.m in Sources */,
 				212C9D961F3C4D83007F66DE /* AWHWAACEncoder.m in Sources */,
 				212C9D971F3C4D83007F66DE /* AWHWH264Encoder.m in Sources */,
 			);
